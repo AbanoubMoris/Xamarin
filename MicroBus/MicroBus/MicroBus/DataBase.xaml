@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MicroBus.DataBase">
+    <StackLayout Orientation="Vertical" BackgroundColor="Black" >
+        
+        <StackLayout Orientation="Horizontal" Spacing="10">
+            <Image Source="X.png"></Image>
+            <Label Text="Welcome" FontSize="24" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Red"></Label>
+            <Image Source="O.png"></Image>
+
+
+        </StackLayout>
+        
+        <Label  Text="_______________________________" FontSize="24" HorizontalOptions="Center" TextColor="Aqua"></Label>
+
+        <StackLayout Padding="10,15,20,10" BackgroundColor="BurlyWood">
+            <Entry x:Name="usertxt" Placeholder="Enter Your Username" BackgroundColor="Transparent" ></Entry>
+            <Entry x:Name="passtxt" IsPassword="True" Placeholder="Enter your Password" BackgroundColor="Transparent" ></Entry>
+            <Button x:Name="LogInBTN" Clicked="LogInBTN_Clicked" Text="LogIn" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Red"> </Button>
+            <Button x:Name="newAccBTN" Clicked="NewAccBTN_Clicked" Text="Create acount" HorizontalOptions="End" VerticalOptions="End" HeightRequest="42"></Button>
+        </StackLayout>
+        
+        <Label Text="_______________________________" FontSize="24" HorizontalOptions="Center" TextColor="Aqua"></Label>
+
+    </StackLayout>
+</ContentPage>

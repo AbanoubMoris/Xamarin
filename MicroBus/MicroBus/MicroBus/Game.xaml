@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MicroBus.Game">
+    <Grid BackgroundColor="Black" RowSpacing="1" ColumnSpacing="1">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.5*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center" Text="X" TextColor="white" FontSize="Medium"></Label>
+            <Label Grid.Row="1" Grid.Column="0" x:Name="XScore" HorizontalOptions="Center" VerticalOptions="Center" Text="0" TextColor="white" FontSize="Medium"></Label>
+
+            <Label Grid.Row="0" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center" Text="Gamer Over" TextColor="white" FontSize="Medium" IsVisible="False"></Label>
+            <Button Grid.Row="1" Grid.Column="1" VerticalOptions="Start" BackgroundColor="Gray" Text="Play Again" TextColor="white" FontSize="Medium" IsVisible="False" x:Name="playAgain" Clicked="PlayAgain_Clicked"></Button>
+
+            <Label Grid.Row="0" Grid.Column="2"  HorizontalOptions="Center" VerticalOptions="Center" Text="O" TextColor="white" FontSize="Medium"></Label>
+            <Label Grid.Row="1" Grid.Column="2" x:Name="OScore" HorizontalOptions="Center" VerticalOptions="Center" Text="0" TextColor="white" FontSize="Medium"></Label>
+
+        </Grid>
+
+        <Button Grid.Row="1" Grid.Column="0" Text="" TextColor="White" Font="Medium" BackgroundColor="Gray" x:Name="b1" Clicked="Clicked"></Button>
+        <Button Grid.Row="1" Grid.Column="1" Text="" TextColor="White" Font="Medium" BackgroundColor="Gray" x:Name="b2" Clicked="Clicked"></Button>
+        <Button Grid.Row="1" Grid.Column="2" Text="" TextColor="White" Font="Medium" BackgroundColor="Gray" x:Name="b3" Clicked="Clicked"></Button>
+
+        <Button Grid.Row="2" Grid.Column="0" Text="" TextColor="White" Font="Medium" BackgroundColor="Gray" x:Name="b4" Clicked="Clicked"></Button>
+        <Button Grid.Row="2" Grid.Column="1" Text="" TextColor="White" Font="Medium" BackgroundColor="Gray" x:Name="b5" Clicked="Clicked"></Button>
+        <Button Grid.Row="2" Grid.Column="2" Text="" TextColor="White" Font="Medium" BackgroundColor="Gray" x:Name="b6" Clicked="Clicked"></Button>
+
+        <Button Grid.Row="3" Grid.Column="0" Text="" TextColor="White" Font="Medium" BackgroundColor="Gray" x:Name="b7" Clicked="Clicked"></Button>
+        <Button Grid.Row="3" Grid.Column="1" Text="" TextColor="White" Font="Medium" BackgroundColor="Gray" x:Name="b8" Clicked="Clicked"></Button>
+        <Button Grid.Row="3" Grid.Column="2" Text="" TextColor="White" Font="Medium" BackgroundColor="Gray" x:Name="b9" Clicked="Clicked"></Button>
+
+
+    </Grid>
+
+</ContentPage>

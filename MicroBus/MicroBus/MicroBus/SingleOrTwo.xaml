@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MicroBus.SingleOrTwo" BackgroundColor="Black">
+
+
+    
+    <StackLayout BackgroundColor="Black" VerticalOptions="Center" Margin="20" Padding="20">
+        <Label Margin="50,10" x:Name="welcome" Text="Welcome " FontSize="35" TextColor="Aqua" VerticalOptions="Center" HorizontalOptions="Center"></Label>
+        <Label></Label>
+        <Button x:Name="SinglePlayer" Clicked="Select"  Text="Play with AI" CornerRadius="20" Font="26" TextColor="Azure" BackgroundColor="Transparent" BorderColor="BlueViolet" BorderWidth="3" Margin="5" Rotation="3"/>
+        <Button x:Name="TwoPlayer" Clicked="Select" Text="Play With friend"   CornerRadius="20" Font="26" BackgroundColor="Transparent" TextColor="Azure" BorderColor="BlueViolet" BorderWidth="3" Margin="5" Rotation="-1"/>
+        <Button Text="High Score"   CornerRadius="20" Font="26" BackgroundColor="Transparent" TextColor="Azure" BorderColor="BlueViolet" BorderWidth="3" Margin="5" Rotation="3"/>
+
+    </StackLayout>
+
+
+
+</ContentPage>
